@@ -1,4 +1,5 @@
-# simple LED counter for Circuit Playground Express
+# picks a random color and lerps to it over a few seconds, then picks another random color and so forth
+# shows how to use a class to encapsulate the lerp logic and how colors can be tuples
 import time
 import random
 import board

@@ -3,9 +3,8 @@
 # We're going to spin a colored dot around the ring of LEDs
 # the color of the dot can be changed by tapping the touch pads
 # the direction of the spin can be changed by flipping the switch
-# the speed can be changed by pressing the buttons
-# it can be turned off and on by blowing in it
-# if it's tilted far to one side it will make a sound
+# the speed can be changed by pressing either button
+# it can be turned off by pressing both buttons at once
 
 import time
 import board

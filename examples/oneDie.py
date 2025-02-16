@@ -1,3 +1,6 @@
+# simulates a 6- or 10-sided die roll on the Circuit Playground Express;
+# button A is 6-sided (green) and button B is 10-sided (blue);
+# the die rolls for a while and then settles on a face.
 import time
 import random
 

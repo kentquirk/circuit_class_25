@@ -1,7 +1,6 @@
-# LED counter for Circuit Playground Express
-# with a demonstration of the "auto_write" feature
-# of the pixels; it's convenient but a lot slower
-# if you're setting most of the pixels each time.
+# LED counter for Circuit Playground Express with a demonstration of the
+# "auto_write" feature of the pixels (controlled by the switch); it's convenient
+# but a lot slower if you're setting most of the pixels each time.
 import time
 import board
 from adafruit_circuitplayground import cp

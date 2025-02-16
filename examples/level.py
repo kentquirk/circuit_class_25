@@ -1,3 +1,7 @@
+# uses the accelerometer to make a simple "level".
+# If the board is level, all the pixels will be white;
+# if it's tilted to one side, the pixels on the high side
+# will be blue and the pixels on the low side will be red.
 from adafruit_circuitplayground import cp
 
 highside = 0x0000FF
