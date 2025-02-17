@@ -22,6 +22,17 @@ class: invert
 
 ---
 
+# Links
+
+* [Repository with presentations and example code](https://github.com/kentquirk/circuit_class_25)
+* [Circuit Playground Express Quickstart](https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-quickstart) at Adafruit
+* [CircuitPython download](https://circuitpython.org/board/circuitplayground_express/) for Circuit Playground Express
+* [A bunch of example programs](https://docs.circuitpython.org/projects/circuitplayground/en/latest/examples.html) from the API
+* [The API reference](https://docs.circuitpython.org/projects/circuitplayground/en/latest/api.html) for the base library
+* The [Circuit Playground Express page](https://www.adafruit.com/product/3333) on Adafruit
+
+---
+
 # Circuit Playground Express
 ## Connection pads
 
@@ -33,10 +44,12 @@ class: invert
 ---
 
 # Circuit Playground Express
-## Sound
+## Sound & Light
 
 * MEMS microphone
-* Mini Speaker
+* Mini Speaker (class D amplifier)
+* Visible light phototransistor for analog light level
+* IR Receiver (phototransistor) and transmitter (IR LED)
 
 ---
 
