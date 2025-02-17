@@ -1,7 +1,5 @@
 # simple LED counter for Circuit Playground Express
 import time
-import random
-import board
 from adafruit_circuitplayground import cp
 
 while True:
