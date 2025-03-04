@@ -7,7 +7,6 @@
 # it can be turned off by pressing both buttons at once
 
 import time
-import board
 from adafruit_circuitplayground import cp
 
 pixelColor = 0xFF0000  # red
@@ -16,18 +15,15 @@ dwell = 0.1  # how long to wait between moves
 lasttick = time.monotonic()
 currentPixel = 0
 
-# we need to wrap these properties in functions so we can pass them to the Debouncer
-def get_button_a():
-    return cp.button_a
-
-def get_button_b():
-    return cp.button_b
-
 class Debouncer:
-    def __init__(self, f, debounceTime):
-        self.f = f
+    """
+    This is a class to help in 'debouncing' hardware. The computers are so fast that
+    switches can change values a lot more often than it looks.
+    """
+    def __init__(self, getValueFunc, debounceTime):
+        self.f = getValueFunc
         self.debounceTime = debounceTime
-        self.lastValue = f()
+        self.lastValue = self.f()
         self.waitUntil = time.monotonic()
         self.changed = False
 
@@ -47,6 +43,14 @@ class Debouncer:
         pressed = self.changed and self.lastValue
         self.changed = False
         return pressed
+
+
+# we need to wrap these properties in functions so we can pass them to the Debouncer
+def get_button_a():
+    return cp.button_a
+
+def get_button_b():
+    return cp.button_b
 
 
 button_a = Debouncer(get_button_a, .2)

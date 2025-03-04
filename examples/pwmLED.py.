@@ -1,0 +1,32 @@
+# implements a simple game
+# there are 5 LEDs in a pattern of 5 colors
+# red, white, blue, green, yellow
+# there are 5 leds you need to make match the pattern
+# same colors, different order.
+# there are 4 pads you can touch for different transformations
+
+
+# Write your code here :-)
+import pwmio
+import board
+import time
+from adafruit_circuitplayground import cp
+
+dutymin = 4000
+dutymax = 16000
+dutyrange = dutymax - dutymin
+
+led = pwmio.PWMOut(board.A3, frequency=100, duty_cycle=0)
+duty = 5000
+while True:
+    if cp.button_a:
+        duty -= 100
+    if cp.button_b:
+        duty += 100
+    if duty < dutymin:
+        duty = dutymin
+    if duty > dutymax:
+        duty = dutymax
+    print(duty)
+    led.duty_cycle = duty
+    time.sleep(.03)

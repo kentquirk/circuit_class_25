@@ -30,7 +30,7 @@ class: invert
 * [A bunch of example programs](https://docs.circuitpython.org/projects/circuitplayground/en/latest/examples.html) from the API
 * [The API reference](https://docs.circuitpython.org/projects/circuitplayground/en/latest/api.html) for the base library
 * The [Circuit Playground Express page](https://www.adafruit.com/product/3333) on Adafruit
-
+* [Bolt-on controller board](https://www.adafruit.com/product/3093) for the Circuit Playground Express - make a Robot!
 ---
 
 # Circuit Playground Express
